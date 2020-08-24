@@ -1,0 +1,4 @@
+### GET
+GET http://www.pm25.in/api/querys/pm2_5.json?city=zhuhai&token=5j1znBVAsnSf5xQyNQyq
+Content-Type: application/json
+Charset: UTF-8

@@ -1,0 +1,14 @@
+### POST
+POST https://iotcloud.tencentcloudapi.com HTTP/1.1
+Host: iotcloud.tencentcloudapi.com
+Content-Type: application/json
+Charset: UTF-8
+
+Authorization: TC3-HMAC-SHA256 Credential=AKIDMmAGX00PP6hQZaP32sdEAF9yllroLc9W/2020-08-12/iotcloud/tc3_request, SignedHeaders=content-type;host, Signature=cea9f100688e34f7a6faceb6f4c60b29643e8d08328f393f5a58553764b7545a
+Action: DescribeProducts
+Region: ap-guangzhou
+Language: zh-CN
+Timestamp: {{$timestamp}}
+Version: 2018-06-14
+
+{"Offset":0,"Limit":10}
