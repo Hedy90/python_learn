@@ -4,7 +4,7 @@ from tencentcloud.common.profile.http_profile import HttpProfile
 from tencentcloud.common.exception.tencent_cloud_sdk_exception import TencentCloudSDKException
 from tencentcloud.iotcloud.v20180614 import iotcloud_client, models 
 try: 
-    cred = credential.Credential("AKIDMmAGX00PP6hQZaP32sdEAF9yllroLc9W", "YDmBaVbuzO7dtz8XUFpTFzDLE88JQP3V") 
+    cred = credential.Credential("appid", "appkey") 
     httpProfile = HttpProfile()
     httpProfile.endpoint = "iotcloud.tencentcloudapi.com"
 
