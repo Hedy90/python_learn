@@ -13,8 +13,8 @@ def get_html(url):
 # 获取笑话的函数，下面会调用
 def get_certain_joke(html):
     """get the joke of the html"""
-    soup = BeautifulSoup(html, 'lxml')#使用lxml解析器对网页进行解析（可以使用默认解析器，但是lxml解析器功能更加强大）
-    joke_content = soup.select('a[class="MsoNormal"]')[0].get_text()#获取标签为a，属性class为"recmd-content"的内容，取第一条的内容（可以查看网页源码之后确定搜索的内容）
+    soup = BeautifulSoup(html)#使用默认解析器对网页进行解析（可以使用默认解析器，但是解析器功能更加强大）
+    joke_content = soup.select('a[class="MsoNormal"]')[0].get_text()#获取标签为a，属性class为"-content"的内容，取第一条的内容（可以查看网页源码之后确定搜索的内容）
     return joke_content#返回得到的内容
  
 url_joke = "https://kf.qq.com/faq/140225MveaUz1501077rEfqI.html"#网页地址

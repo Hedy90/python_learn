@@ -35,6 +35,4 @@ images=soup.find_all('img',{'src':re.compile("\.\.\/img\/gifts\/img.*\.jpg")}) #
 for link2 in images:
     print(link2.get('src'))
 
-#lambda表达式，通过该表达式选择标签，有时是正则表达式的完美替代方案
-ceshi=soup.find_all(lambda tag: len(tag.attrs)==2)
-print(ceshi)
+# lambda表达式，通过该表达式选择标签，有时是正则表达式的完美替代方案
